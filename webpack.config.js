@@ -8,7 +8,8 @@ module.exports = {
         SectionCenterBlank: './src/types/SectionCenterBlank.js',
         SectionCenterImages: './src/types/SectionCenterImages.js',
         SectionCenterLeftBottomTitle: './src/types/SectionCenterLeftBottomTitle.js',
-        SectionCenterLeftTopTitleCenterDescription: './src/types/SectionCenterLeftTopTitleCenterDescription.js'
+        SectionCenterLeftTopTitleCenterDescription: './src/types/SectionCenterLeftTopTitleCenterDescription.js',
+        SectionCenterParalax: './src/types/SectionCenterParalax.js'
     },
     output: {
         path: path.resolve(__dirname, 'types'),
