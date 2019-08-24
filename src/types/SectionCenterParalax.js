@@ -24,13 +24,17 @@ class SectionCenterParalax extends Component {
     }
 
     componentDidMount() {
-        window.addEventListener("resize", this.handleResize);
-        window.addEventListener("scroll", this.handleScroll);
+        if(window.innerWidth > 700) {
+            window.addEventListener("resize", this.handleResize);
+            window.addEventListener("scroll", this.handleScroll);
+        }
     }
 
     componentWillUnmount() {
-        window.removeEventListener("resize", this.handleResize);
-        window.removeEventListener("scroll", this.handleScroll);
+        if(window.innerWidth > 700) {
+            window.removeEventListener("resize", this.handleResize);
+            window.removeEventListener("scroll", this.handleScroll);
+        }
     }
 
     render() {
