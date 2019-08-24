@@ -10,7 +10,7 @@ class SectionCenterLeftTopTitleCenterDescription extends Component {
     render() {
 
         return(
-            <div id='id-section-center-left-top-title-center-description-container' className='section-center-left-bottom-title-container' style={{ display: "flex", flexWrap: "unwrap", alignContent: 'center', alignItems: 'center', justifyContent: 'center' ,width: "100%", backgroundAttachment: "fixed", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: `url(${this.props.sectionBackgroundImage})`, backgroundSize: "cover" }}>
+            <div id={ this.props.sectionId } className='section-center-left-bottom-title-container' style={{ display: "flex", flexWrap: "unwrap", alignContent: 'center', alignItems: 'center', justifyContent: 'center' ,width: "100%", backgroundAttachment: "fixed", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: `url(${this.props.sectionBackgroundImage})`, backgroundSize: "cover" }}>
                 <div id='id-section-center-left-top-title-center-description-text-image-container' className='section-section-center-left-top-title-center-description-text-image-container' style={{ display: "flex", flexWrap: "unwrap", alignContent: 'center', alignItems: 'center', justifyContent: 'center' ,width: "100%", backgroundColor: this.props.sectionBackgroundColor }}>
                     <div id='id-section-center-left-top-title-center-description-text-image-content' className='section-center-left-top-title-center-description-text-image-content'>
                         <div id='id-section-center-left-top-title-center-description-image-container' className='section-center-left-top-title-center-description-image-container' >
