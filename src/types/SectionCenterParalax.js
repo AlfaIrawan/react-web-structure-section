@@ -7,6 +7,26 @@ class SectionCenterParalax extends Component {
         super(props)
     };
 
+    handleScroll() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("id-section-center-left-bottom-title-text-image-container").style.opacity = "0.6"
+        }
+        else {
+            document.getElementById("id-section-center-left-bottom-title-text-image-container").style.opacity = "0.8"
+        }
+    }
+
+    componentDidMount() {
+        if(window.innerWidth > 700) {
+            window.addEventListener("scroll", this.handleScroll);
+        }
+    }
+
+    componentWillUnmount() {
+        if(window.innerWidth > 700) {
+            window.removeEventListener("scroll", this.handleScroll);
+        }
+    }
 
     render() {
         return(
