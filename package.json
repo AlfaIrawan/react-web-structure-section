@@ -1,6 +1,6 @@
 {
   "name": "react-web-structure-section",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "",
   "main": "build/index.js",
   "peerDependencies": {
